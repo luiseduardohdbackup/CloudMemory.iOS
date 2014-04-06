@@ -101,14 +101,22 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="CloudMemory.iOSViewController.cs" />
-    <Compile Include="CloudMemory.iOSViewController.designer.cs">
+    <Compile Include="ViewControllers\CloudMemory.iOSViewController.cs" />
+    <Compile Include="ViewControllers\CloudMemory.iOSViewController.designer.cs">
       <DependentUpon>CloudMemory.iOSViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="MainStoryboard_iPhone.storyboard" />
-    <InterfaceDefinition Include="MainStoryboard_iPad.storyboard" />
+    <InterfaceDefinition Include="Views\MainStoryboard_iPad.storyboard" />
+    <InterfaceDefinition Include="Views\MainStoryboard_iPhone.storyboard" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Model\DataModels\" />
+    <Folder Include="Model\DataLayer\" />
+    <Folder Include="Model\BussinessLogic\" />
+    <Folder Include="ViewControllers\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
 </Project>
