@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CloudMemory.iOS
+namespace CloudMemory.DataModels
 {
 	public class MemoryRecord
 	{

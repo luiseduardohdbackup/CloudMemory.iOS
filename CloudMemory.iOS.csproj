@@ -101,13 +101,19 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewControllers\CloudMemory.iOSViewController.cs" />
-    <Compile Include="ViewControllers\CloudMemory.iOSViewController.designer.cs">
-      <DependentUpon>CloudMemory.iOSViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model\DataModels\MemoryRecord.cs" />
     <Compile Include="Model\DataModels\Constans.cs" />
-    <Compile Include="Model\DataLayer\MemoryRecordsDatabase.cs" />
+    <Compile Include="Screens\CloudMemory.iOSViewController.cs" />
+    <Compile Include="Screens\CloudMemory.iOSViewController.designer.cs">
+      <DependentUpon>CloudMemory.iOSViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataModels\IMemoryRecord.cs" />
+    <Compile Include="Model\DataLayer\ICloudDataAccessor.cs" />
+    <Compile Include="Model\DataLayer\IDatabaseDataAccessor.cs" />
+    <Compile Include="Model\DataLayer\ISettingAccessor.cs" />
+    <Compile Include="Model\BussinessLogic\IAuthenticationManger.cs" />
+    <Compile Include="Model\BussinessLogic\IRegistrationManager.cs" />
+    <Compile Include="Model\BussinessLogic\ICoreDataManger.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Views\MainStoryboard_iPad.storyboard" />
@@ -119,7 +125,7 @@
     <Folder Include="Model\DataModels\" />
     <Folder Include="Model\DataLayer\" />
     <Folder Include="Model\BussinessLogic\" />
-    <Folder Include="ViewControllers\" />
     <Folder Include="Views\" />
+    <Folder Include="Screens\" />
   </ItemGroup>
 </Project>
