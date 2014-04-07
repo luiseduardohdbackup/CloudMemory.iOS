@@ -3,6 +3,8 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
+using CloudMemory.DataLayer;
+
 namespace CloudMemory.iOS
 {
 	public partial class CloudMemory_iOSViewController : UIViewController
@@ -27,6 +29,7 @@ namespace CloudMemory.iOS
 
 		public override void ViewDidLoad ()
 		{
+			Console.WriteLine(MemoryRecordsDatabase.Instance.ToString());
 			base.ViewDidLoad ();
 			
 			// Perform any additional setup after loading the view, typically from a nib.

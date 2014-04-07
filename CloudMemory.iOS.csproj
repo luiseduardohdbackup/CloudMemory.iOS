@@ -105,6 +105,9 @@
     <Compile Include="ViewControllers\CloudMemory.iOSViewController.designer.cs">
       <DependentUpon>CloudMemory.iOSViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\DataModels\MemoryRecord.cs" />
+    <Compile Include="Model\DataModels\Constans.cs" />
+    <Compile Include="Model\DataLayer\MemoryRecordsDatabase.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Views\MainStoryboard_iPad.storyboard" />
